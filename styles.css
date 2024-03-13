@@ -26,7 +26,7 @@ html,
 body {
     margin: 0;
     display: block;
-    font-family: 'Figtree', sans-serif;
+    font-family: 'PortfolioFont', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: geometricPrecision;
     -moz-osx-font-smoothing: grayscale;
@@ -63,29 +63,29 @@ svg {
 
 @font-face {
     font-display: swap; 
-    font-family: 'Figtree';
+    font-family: 'PortfolioFont';
     font-style: normal;
     font-weight: 500;
     unicode-range: U+000-5FF;
-    src: local(''), url('./assets/figtree-v5-latin-500.woff2') format('woff2'); 
+    src: local(''), url('./assets/portfolioFont500.woff2') format('woff2'); 
 }
 
 @font-face {
     font-display: swap; 
-    font-family: 'Figtree';
+    font-family: 'PortfolioFont';
     font-style: normal;
     font-weight: 600;
     unicode-range: U+000-5FF;
-    src: local(''), url('./assets/figtree-v5-latin-600.woff2') format('woff2'); 
+    src: local(''), url('./assets/portfolioFont600.woff2') format('woff2'); 
 }
 
 @font-face {
     font-display: swap; 
-    font-family: 'Figtree';
+    font-family: 'PortfolioFont';
     font-style: normal;
     font-weight: 700;
     unicode-range: U+000-5FF;
-    src: local(''), url('./assets/figtree-v5-latin-700.woff2') format('woff2'); 
+    src: local(''), url('./assets/portfolioFont700.woff2') format('woff2'); 
 }
 
 .introInit {
