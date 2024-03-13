@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, {
         rootMargin: '0px',
-        threshold: 0.2
+        threshold: 0.14
     });
 
     const section = document.querySelector('.timelineInit');
