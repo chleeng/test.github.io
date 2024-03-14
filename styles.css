@@ -282,8 +282,8 @@ svg {
     position: absolute;
     width: 100%;
     height: 100%;
-    filter: saturate(0%) brightness(53%) contrast(1500%);
-    -webkit-filter: saturate(0%) brightness(53%) contrast(1500%);
+    filter: saturate(0%) brightness(56.1%) contrast(1500%);
+    -webkit-filter: saturate(0%) brightness(56.1%) contrast(1500%);
     transform: rotateY(300deg) translateZ(360px);
     transition: transform 1s ease 0s;
     opacity: 0;
