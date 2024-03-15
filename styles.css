@@ -254,7 +254,7 @@ svg {
     top: -440px;
     left: -402px;
     -webkit-mask: conic-gradient(from 295deg at bottom,#0000, #000 63deg 1deg, #0000 135deg);
-    background: radial-gradient(farthest-side at bottom,#ffffff 0%,#0000 63%);
+    background: radial-gradient(farthest-side at bottom,#ffffff 0%, rgb(255 255 255 / 0%) 63%);
     animation: fadeIn 1.6s both;
     animation-timing-function: var(--cubicEase);
     animation-delay: 1.2s;
