@@ -34,7 +34,7 @@ function skillTransition() {
 function initResponsive() {
     let maxScreenWidth = window.screen.width;
     let screenWidth = window.innerWidth;
-    let translateZValue = Math.min(screenWidth / 3, imgDFR);
+    let translateZValue;
     let newSize;
 
     if (maxScreenWidth <= 1440) {
@@ -60,7 +60,7 @@ function initResponsive() {
 function responsive() {
     let maxScreenWidth = window.screen.width;
     let screenWidth = window.innerWidth;
-    let translateZValue = Math.min(screenWidth / 3, imgDFR);
+    let translateZValue;
     let newSize;
 
     if (maxScreenWidth <= 1440) {
