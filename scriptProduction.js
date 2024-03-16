@@ -10,25 +10,16 @@ function skillTransition() {
     } catch(err) {}
     checkSafari = (checkSafari || ((navUA.indexOf('safari') != -1)&& (!(navUA.indexOf('chrome')!= -1) && (navUA.indexOf('version/')!= -1))));
 
-    setTimeout(() => {
-        if (checkSafari) {
-            skillLogos.forEach((skills, index) => {
-                skills.style.transition = "transform 1s, opacity 1s";
-                skills.style.transform = "rotateY(" + (index * (360 / skillLogos.length)) + "deg) translateZ(" + imgDFR + "px)";
-                skills.style.opacity = "1";
-                skills.style.transitionDelay = ".100s";
-            });
-        } else {
-            skillLogos.forEach((skills, index) => {
-                skills.style.transition = "transform 1s, opacity 1s";
-                skills.style.transform = "rotateY(" + (index * (360 / skillLogos.length)) + "deg) translateZ(" + imgDFR + "px)";
-                skills.style.opacity = "1";
-                skills.classList.add('imgReflect');
-                skills.style.transitionDelay = ".100s";
-            });
+    skillLogos.forEach((skills, index) => {
+        skills.style.transition = "transform 1s, opacity 1s";
+        skills.style.transform = `rotateY(${index * (360 / skillLogos.length)}deg) translateZ(${imgDFR}px)`;
+        skills.style.opacity = "1";
+        if (!checkSafari) {
+            skills.classList.add('imgReflect');
         }
-        initResponsive();
-    }, 400);
+        skills.style.transitionDelay = ".500s";
+    });
+    initResponsive();
 }
 
 function initResponsive() {
