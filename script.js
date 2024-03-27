@@ -8,7 +8,7 @@ function skillTransition() {
     try {
         checkSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
     } catch(err) {}
-    checkSafari = (checkSafari || ((navUA.indexOf('safari') != -1)&& (!(navUA.indexOf('chrome')!= -1) && (navUA.indexOf('version/')!= -1))));
+    checkSafari = (checkSafari || ((navUA.indexOf('safari') != -1) && (!(navUA.indexOf('chrome')!= -1) && (navUA.indexOf('version/')!= -1))));
 
     setTimeout(() => {
         if (checkSafari) {
@@ -16,7 +16,7 @@ function skillTransition() {
                 skills.style.transition = "transform 1s, opacity 1s";
                 skills.style.transform = "rotateY(" + (index * (360 / skillLogos.length)) + "deg) translateZ(" + imgDFR + "px)";
                 skills.style.opacity = "1";
-                skills.style.transitionDelay = ".100s";
+                skills.style.transitionDelay = ".1s";
             });
         } else {
             skillLogos.forEach((skills, index) => {
@@ -24,7 +24,7 @@ function skillTransition() {
                 skills.style.transform = "rotateY(" + (index * (360 / skillLogos.length)) + "deg) translateZ(" + imgDFR + "px)";
                 skills.style.opacity = "1";
                 skills.classList.add('imgReflect');
-                skills.style.transitionDelay = ".100s";
+                skills.style.transitionDelay = ".1s";
             });
         }
         initResponsive();
